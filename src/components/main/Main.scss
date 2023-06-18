@@ -1,0 +1,76 @@
+.Listing {
+  padding: 30px 0px;
+
+  .watchListing {
+    background-image: linear-gradient(to right, #ffb100, yellow);
+    cursor: pointer;
+    height: 80px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    h4 {
+      font-weight: "600";
+    }
+  }
+  .bagListing {
+    background-image: linear-gradient(to right, #d53172, #ed7eaa);
+    cursor: pointer;
+    height: 80px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    h4 {
+      font-weight: "600";
+    }
+  }
+  .shoeListing {
+    background-image: linear-gradient(to right, #317bd5, #11ed9c);
+    cursor: pointer;
+    height: 80px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+
+    h4 {
+      font-weight: "600";
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Listing {
+    text-align: -webkit-center;
+
+    .watchListing {
+      width: 280px;
+      margin: 10px;
+    }
+    .bagListing {
+      width: 280px;
+      margin: 10px;
+    }
+    .shoeListing {
+      width: 280px;
+      margin: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .Listing {
+    .watchListing {
+      margin: 20px;
+    }
+    .bagListing {
+      margin: 20px;
+    }
+    .shoeListing {
+      margin: 20px;
+    }
+  }
+}
