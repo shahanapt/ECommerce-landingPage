@@ -9,11 +9,20 @@ import { BackpackData, ShoeData } from "../products/Products";
 import BackpackProductCards from "../card/BackpackProductCards";
 import AllProductCards from "../card/AllProductCards";
 import "./Main.scss";
+import WatchProductCards from "../card/WatchProductCards";
 
 const Main = () => {
   const combinedArray = [ShoeData, BackpackData];
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [filteredData, setFilteredData] = useState();
+
+  const handleWatchClick = () => {
+    setSelectedCategory("Watch");
+
+    // Filter the data for the selected category (Bag)
+    const filtered = combinedArray.filter((item) => item.category === "Watch");
+    setFilteredData(filtered);
+  };
 
   const handleBagClick = () => {
     setSelectedCategory("Bag");
@@ -39,7 +48,7 @@ const Main = () => {
         <div className="Listing">
           <Row>
             <Col md="4">
-              <div className=" d-flex watchListing">
+              <div className=" d-flex watchListing" onClick={handleWatchClick}>
                 <div>
                   <h4>Watch</h4>
                 </div>
@@ -80,7 +89,9 @@ const Main = () => {
         {/* display cards */}
 
         <section style={{ textAlign: "-webkit-center" }}>
-          {selectedCategory === "Shoes" ? (
+          {selectedCategory === "Watch" ? (
+            <WatchProductCards data={filteredData} />
+          ) : selectedCategory === "Shoes" ? (
             <ShoeProductCards data={filteredData} />
           ) : selectedCategory === "Bag" ? (
             <BackpackProductCards data={filteredData} />

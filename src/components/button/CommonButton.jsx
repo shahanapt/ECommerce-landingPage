@@ -7,7 +7,7 @@ const CommonButton = ({ text }) => {
       <Button
         style={{
           border: "none",
-          background: "#fd4c98",
+          background: "rgb(97 14 49)",
           width: "100px",
           height: "40px",
         }}

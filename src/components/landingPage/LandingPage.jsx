@@ -8,16 +8,16 @@ const LandingPage = () => {
   return (
     <Container>
       <section id="home">
-        <div style={{ background: "#ffeaeb" }}>
+        <div style={{ background: "rgb(207 117 121)" }}>
           <div className="d-flex main">
-            <div style={{ alignSelf: "center", width: "60%" }}>
+            <div style={{ alignSelf: "center", width: "60%", color: "white" }}>
               <h2>X-Box For Your Living Room</h2>
               <p>
                 Contrary to popular belief, Lorem lpsum is not simply random
                 text. It has roots in a piece of classical Latin literature.
               </p>
 
-              <h1 style={{ color: "#d7417a" }}>$600</h1>
+              <h1 style={{ color: "rgb(97 14 49)" }}>$600</h1>
               {/* Buy Now button (props) */}
               <CommonButton text={"Buy Now"} />
             </div>

@@ -26,8 +26,11 @@
   .productCardButton {
     border: none;
     color: white;
-    background: black;
+    background: rgb(97 14 49);
     width: 120px;
+  }
+  .productCardButton:hover {
+    background: rgb(165, 25, 83);
   }
 }
 

@@ -15,11 +15,16 @@ const Header = () => {
   console.log(cartTotalQuantity);
   return (
     <Navbar style={{ height: "90px" }}>
-      <Container>
+      <Container
+        style={{
+          background: "white",
+          position: "fixed",
+          margin: "0 100px",
+          color: "rgb(97 14 49)",
+        }}
+      >
         <Nav className="navItems">
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#shoes">Shoes</Nav.Link>
-          <Nav.Link href="#backpack">Backpack</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
         <Navbar.Toggle />
@@ -32,7 +37,7 @@ const Header = () => {
             <Nav.Link
               style={{
                 color: "white",
-                background: "#22a5bd",
+                background: "rgb(97 14 49)",
                 borderRadius: "100px",
                 height: "40px",
               }}
